@@ -19,47 +19,51 @@
   <div class="reveal">
     <div class="slides">
       <section class='' data-state='' id='slide-1'>
-  <h2>Slide 1</h2>
-  <ul>
-<li>Test</li>
-<li>Test</li>
-<li>Test</li>
-</ul>
+  <h1>Baby Names by Birth Year</h1>
+  <p>A Shiny Application by Kevin Markham</p>
 
 </section>
 <section class='' data-state='' id='slide-2'>
-  <h2>Slide 2</h2>
-  <ul>
-<li>Test</li>
-<li>Test</li>
-<li>Test</li>
-</ul>
+  <h2>What&#39;s Your Name?</h2>
+  <p>Have you met a lot of people with the same name as you?</p>
+
+<p>Are they older or younger than you?</p>
+
+<p>Do you know someone of the opposite gender with your name?</p>
 
 </section>
 <section class='' data-state='' id='slide-3'>
-  <h2>Slide 3</h2>
-  <ul>
-<li>Test</li>
-<li>Test</li>
-<li>Test</li>
+  <h2>Would you like to learn more about your name?</h2>
+  <p>With my <a href="https://justmarkham.shinyapps.io/babynames/">Shiny Application</a>, now you can!</p>
+
+<ul>
+<li>Input your name</li>
+<li>View a plot of the number of males and females born with your name in the US from 1880 to 2013</li>
+<li>Find out in which year your name was most popular, and how many children have been born with your name!</li>
 </ul>
 
 </section>
 <section class='' data-state='' id='slide-4'>
-  <h2>Slide 4</h2>
-  <ul>
-<li>Test</li>
-<li>Test</li>
-<li>Test</li>
-</ul>
+  <h2>Data Source</h2>
+  <p>The data for this application was provided by the <a href="http://www.ssa.gov/oact/babynames/limits.html">United States Social Security Administration</a>, and was converted into an <a href="https://github.com/hadley/babynames">R package</a> by Hadley Wickham.</p>
+
+<p>Here are the number of unique names in the dataset:</p>
+
+<pre><code class="r">library(babynames)
+length(unique(babynames$name))
+</code></pre>
+
+<pre><code>## [1] 92600
+</code></pre>
 
 </section>
 <section class='' data-state='' id='slide-5'>
-  <h2>Slide 5</h2>
+  <h2>Links</h2>
   <ul>
-<li>Test</li>
-<li>Test</li>
-<li>Test</li>
+<li>Created by <a href="http://dataschool.io">Kevin Markham</a></li>
+<li><a href="https://justmarkham.shinyapps.io/babynames/">Shiny Application</a></li>
+<li><a href="https://github.com/justmarkham/babynames">Application Source Code</a></li>
+<li><a href="https://github.com/justmarkham/babynames/tree/gh-pages">Presentation Source Code</a></li>
 </ul>
 
 </section>
