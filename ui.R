@@ -8,7 +8,7 @@ shinyUI(fluidPage(
         
         sidebarPanel(
             h4("Instructions:"),
-            textInput("name", label="Enter a name:", value="Kevin"),
+            textInput("name", label="Enter your first name:", value="Kevin"),
             sliderInput("year", "Select years to display:", min=1880, max=2013, value=c(1880, 2013), format="####"),
             hr(),
             h4("About:"),
