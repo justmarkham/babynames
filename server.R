@@ -23,7 +23,12 @@ shinyServer(function(input, output){
             theme_bw() +
             theme(legend.position=c(0,1), legend.justification=c(0,1),
                   legend.title=element_blank(),
-                  legend.background=element_blank()) +
+                  legend.background=element_blank(),
+                  legend.text=element_text(size=14),
+                  axis.title.x=element_text(size=16),
+                  axis.text.x=element_text(size=12),
+                  axis.text.y=element_text(size=12),
+                  plot.title=element_text(size=18)) +
             scale_colour_discrete(labels=c("Female","Male")) +
             ggtitle(paste0("Number of children born with the name \"",
                            input$name, "\"")) + 
