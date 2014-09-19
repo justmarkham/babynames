@@ -19,6 +19,10 @@ bn.alltime <- bn %>% group_by(lname, sex) %>% summarise(count=sum(n)) %>% dcast(
 bn.alltime[is.na(bn.alltime)] <- 0
 bn.alltime <- bn.alltime %>% mutate(total=F+M)
 
+# remove unnecessary columns from bn
+bn$name <- NULL
+bn$prop <- NULL
+
 # save data objects for use by server.R
 saveRDS(bn, "bn.rds")
 saveRDS(bn.unique, "bn.unique.rds")
