@@ -12,10 +12,16 @@ shinyUI(fluidPage(
             
             h4("Instructions:"),
             
-            textInput("name", label="Enter your first name:", value="Kevin"),
+            textInput("name", label="Enter your first name:", value="Leslie"),
             
             sliderInput("year", "Select years to display:", min=1880,
                         max=2013, value=c(1880, 2013), format="####"),
+            
+            p(strong("Suggested names to explore:"), "Adolph, Arya, Awesome,
+              Brooklyn, Charlie, Charlotte, Elizabeth, Gertrude, Jackie, Jase,
+              Kelly, Lyric, Quinn, Riley, Shannon, Terry, Unknown, Whitney,
+              Woodrow..."),
+            
             hr(),
             
             # BOTTOM SECTION OF SIDEBAR
