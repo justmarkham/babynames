@@ -29,7 +29,6 @@ shinyServer(function(input, output){
                   axis.text.x=element_text(size=12),
                   axis.text.y=element_text(size=12),
                   plot.title=element_text(size=18)) +
-            scale_colour_discrete(labels=c("Female","Male")) +
             ggtitle(paste0("Number of children born with the name \"",
                            input$name, "\"")) + 
             xlab("Birth Year") +
@@ -55,8 +54,8 @@ shinyServer(function(input, output){
     output$text2 <- renderText({
         validate(need(tolower(input$name) %in% bn.unique, label="Valid name"))
         paste0(format(alltimedata()$total, big.mark=","), " children (",
-               format(alltimedata()$F, big.mark=","), " females and ",
-               format(alltimedata()$M, big.mark=","),
+               format(alltimedata()$Female, big.mark=","), " females and ",
+               format(alltimedata()$Male, big.mark=","),
                " males) have been born with that name since 1880.")
     })
 
