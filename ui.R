@@ -37,6 +37,10 @@ shinyUI(fluidPage(
             
             h4("External Links:"),
             tags$ul(
+                tags$li(a("NameVoyager",
+                          href="http://www.babynamewizard.com/voyager")),
+                tags$li(a("How to Name a Baby",
+                          href="http://waitbutwhy.com/2013/12/how-to-name-baby.html")),
                 tags$li(a("Top 10 names for 2013",
                           href="http://www.ssa.gov/oact/babynames/index.html")),
                 tags$li(a("Change in popularity (2012-2013)",
